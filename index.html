@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/icon.png">
+    <script src="main.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+
+    <div id="floating-Window">
+        <div id="container">
+            <form id="form-box">
+                <label for="title">Title: </label>
+                <input id="title" type="text" required>
+    
+                <label for="author">Author: </label>
+                <input id="author" type="text" required>
+    
+                <label for="pages">Pages: </label>
+                <input id="pages" type="number" required>
+    
+                <label for="read">Is Completed?: </label>
+                
+                <input id="read" type="checkbox" required>
+                
+            </form>
+            <div id="form-buttons">
+                <button type="submit" id="apply">Apply</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>My-LIBRARY</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="menu">
+                <button id="add-btn">Add</button>
+                <button id="deleteAll-btn">Delete All</button>
+            </div>
+            <div class="shelf">
+                <!-- <div class="book">
+                    <div class="description">
+                        <p>Title</p>
+                        <p>Author</p>
+                        <p>Pages</p>
+                        <p>IsRead</p>
+                    </div>
+                    <div class="book-buttons">
+                        <button>Delete</button>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="container-2-content">
+                <p id="Info-table">Information</p>
+                <p>Total number of books: <span id="qtyBook">0</span></p>
+                <p>Number of completed books: <span id="completedBook">0</span></p>
+                <p>Number of imcompleted books: <span id="imcompletedBook">0</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Made By Murad Sadigov</h3>
+        <div class="links">
+            <a id="linkedin" href="https://www.linkedin.com/in/murad-sadigov-61819a219/" target="_blank"></a>
+            <a id="github" href="https://github.com/MuradSadigov" target="_blank"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

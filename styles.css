@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+body
+{
+    min-width: fit-content;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: azure;
+
+}
+
+input[type='checkbox']
+{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+header
+{
+    text-align: center;
+    padding: 2em;
+}
+
+header h1
+{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+}
+
+footer
+{
+    text-align: center;
+    padding: 1em;
+}
+
+.container-2
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 5px double grey;
+    padding: 2em;
+    flex: 1.5;
+}
+
+.container-2-content
+{
+    position: sticky;
+    top: 1em;
+    line-height: 2em;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 2em;
+    border: 5px double grey;
+    min-height: 50vh;
+    flex: 5;
+}
+
+.menu, .book-buttons
+{
+    padding: 1em;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    width: 50%;
+}
+
+#Info-table
+{
+    padding: 1em;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+    border: 10px double rgb(3, 3, 62);
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 50%;
+}
+
+#deleteAll-btn
+{
+    color: red;
+}
+
+.shelf
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+    width: 100%;
+    padding: 1em;
+}
+
+.book
+{
+    background-image: linear-gradient(135deg, rgb(23, 93, 23), rgb(173, 255, 50));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px blanchedalmond;
+    border: 3px solid green;
+}
+
+.delete
+{
+    box-shadow: 0px 0px;
+}
+
+.description
+{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.menu button
+{
+    width: 200px;
+}
+
+button
+{
+    border: 0px;
+    background-color: rgb(211, 227, 241);
+    color: green;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(179, 179, 251);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+button:hover
+{
+    transform: scale(0.8);
+    border-radius: 20px;
+}
+/* Floating Window */
+#floating-Window
+{
+    backdrop-filter: blur(4px);
+    display:none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#container
+{
+    background-image: linear-gradient(135deg, rgb(101, 101, 247), rgb(22, 136, 22));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-width: fit-content;
+    min-height: fit-content;
+    width: 30%;
+    max-width: 30%;
+    max-height: 50%;
+    padding: 2em;
+    border: 5px solid rgb(1, 85, 1);
+    border-radius: 15px;
+}
+
+input
+{
+    display: block;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0.5em;
+}
+
+#read
+{
+    display: inline;
+}
+
+#form-buttons
+{
+    padding: 1em;
+    min-width: max-content;
+}
+
+#apply
+{
+    box-shadow: none;
+    background-color: green;
+    border: 2px solid white;
+    color: white;
+}
+
+#cancel
+{
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    box-shadow: none;
+}
+
+#form-box
+{
+    line-height: 1.5em;
+    font-size: 1.5rem;
+}
+/* FOOTER */
+.links
+{
+    display: flex;
+    width: fit-content;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+#github, #linkedin
+{
+    width: 40px;
+    height: 40px;
+}
+
+#github
+{
+    background-image: url("./images/github.png");
+    background-position: center;
+    background-size: cover;   
+}
+
+#linkedin
+{
+    background-image: url("./images/linkedin.png");
+    background-position: center;
+    background-size: cover;   
+}
+
+h3
+{
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px)
+{
+    main
+    {
+        flex-wrap: wrap; 
+        flex-direction: column-reverse;
+    }
+    .container
+    {
+        min-width: fit-content;
+    }
+    .container-2-content
+    {
+        position: static;
+
+    }
+    .container-2
+    {
+        min-width: fit-content;
+        height: fit-content;
+    }
+    .menu
+    {
+        flex-direction: column;
+        width: fit-content;
+    }
+}
